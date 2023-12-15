@@ -1,0 +1,153 @@
+/* --------- Global style */
+
+body {
+    background-color: #f7faf5;
+    font-family: "Raleway", sans-serif;
+    color: #445361;
+    text-align: center;
+}
+
+/* --------- Heading */
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.logo {
+    height: 35px;
+    padding-right: 5px;
+}
+
+/* --------- Game layout */
+.placeholder{
+    color: blue;
+}
+  input[type=text]{
+    width: 100px;
+    padding: 11px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: purple;
+    font-weight: bold;
+}
+  select{
+    width: 100px;
+    padding: 11px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: purple;
+    font-weight: bold;
+  }
+.game-area {
+  border: 1px solid;
+    background-color: #E3ECF0;
+    box-sizing: border-box;
+    width: 85%;
+    height: 85vh;
+    max-height: 800px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.question-area {
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: auto;
+    padding: 40px 0;
+    display: inline-block;
+}
+.question-area span {
+    padding: 5px;
+}
+.answer-message {
+    display: none;
+    font-size: 2rem;
+}
+/* --------- operands style */
+#operand1, #operand2{
+    font-size: 2.5rem;
+  font-weight: bold;
+  color:blue;
+}
+#answer-box {
+    border: none;
+    background-color: #E3ECF0;
+    color:blue;
+    display: inline-block;
+    height: 40px;
+    width: 160px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: auto;
+}
+/* --------- Buttons */
+.btn--start {
+    width: 80px;
+    padding: 15px;
+    border: 1px solid #d3d37a;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 15px;
+    background-color: #700ab3;
+    color: #a5ff9f;
+}
+.btn--gray {
+    width: 150px;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0 15px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+}
+
+.btn--gray:active,
+.btn--gray:hover {
+    background-color: #445361;
+    color: white;
+}
+.score-area {
+    margin: 2px auto;
+    width: 100%;
+    font-size: 0.9rem;
+}
+.scores {
+    display: inline-block;
+    padding: 10px;
+}
+.info-scores {
+    width: 95%;
+    margin: 10px auto;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.6rem;
+
+}
+#q {
+    color: black;
+    font-weight: bold;}
+
+#Correct {
+    color: green;
+    font-weight: bold;
+}
+
+#inCorrect {
+    color: red;
+    font-weight: bold;
+}
+#Time {
+    font-display: fallback;
+    color: black;
+    font-weight: bolder;
+}

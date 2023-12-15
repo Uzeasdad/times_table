@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome and google fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Times Table</title>
+  </head>
+  <body>
+
+    <h1 class="heading">
+      <img src="img/logo.png" class="logo">Times Table Chalenge</h1>
+<!-- create game area -->
+    <div class="game-area">
+<!-- create imput area in game area -->
+      <div class="imput-area">
+        <input type="text" id="Player_name" name="playerName" placeholder="Player name.." >
+        <select class="Level" name="Level">
+          <option value="1">Level1</option>
+          <option value="2">Level2</option>
+          <option value="3">Level3</option>
+          <option value="4">Level4</option>
+          <option value="5">Level5</option>
+          <option value=6 >Level6</option>
+          <option value="7">Level7</option>
+          <option value="8">Level8</option>
+          <option value="9">Level9</option>
+          <option value="10">Level10</option>
+          <option value="11">Level11</option>
+          <option value="12">Level12</option>
+        </select>
+        <button data-type="start" class="btn btn--start">START</button>
+                </div>
+
+<!-- create chalenge area in game area -->
+      <div class="question-area">
+        <span id="operand1">0</span>
+        <span >x</span>
+        <span id="operand2">0</span>
+        <span>=</span>
+        <p class="answer-message">Enter Answer:</p>
+        <input id="answer-box" type="number" placeholder="Your answer..">
+      </div>
+      <br>
+<!-- create submit button -->
+      <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+
+
+<!-- create score area in game area -->
+      <div class="score-area">
+        <p class="scores">Question <span id="q">0</span> of 10</p>
+        <p class="scores">Correct Answers <span id="Correct">0</span> </p>
+        <p class="scores">Incorrect Answers <span id="inCorrect">0</span> </p>
+        <p class="scores">Timer <span id="Time">00:00:00</span> </p>
+
+      </div>
+
+    <div class="info-scores">
+      <table class="Table-scores">
+        <tr class="player-details">
+          <th>Player name</th>
+          <th>Correct answers</th>
+          <th>Wrong answers</th>
+          <th>Timer</th>
+        </tr>
+      </table>
+      </div>
+
+</div>
+  <script src="main.js"></script>
+  </body>
+</html>
